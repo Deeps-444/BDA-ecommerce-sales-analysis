@@ -78,62 +78,9 @@ Insights**
 
 # 🏗️ System Architecture
 
+![Alt Text](C:\BDA_Ecommerce_Project\screenshots\bda_sys_arch.png)
 
 
-``` text
-                         ┌──────────────────────────┐
-                         │  Synthetic E-Commerce    │
-                         │       Dataset            │
-                         │      100,000 Rows        │
-                         └────────────┬─────────────┘
-                                      │
-                                      ▼
-                         ┌──────────────────────────┐
-                         │       Python             │
-                         │ Dataset Generation       │
-                         │ Data Validation          │
-                         └────────────┬─────────────┘
-                                      │
-                                      ▼
-                         ┌──────────────────────────┐
-                         │          HDFS            │
-                         │ Hadoop Distributed       │
-                         │    File System          │
-                         └────────────┬─────────────┘
-                                      │
-                         ┌────────────┴────────────┐
-                         │                         │
-                         ▼                         ▼
-                ┌─────────────────┐      ┌─────────────────┐
-                │      Hive       │      │      Pig        │
-                │                 │      │                 │
-                │ HiveQL          │      │ Pig Latin       │
-                │ Aggregation     │      │ Filtering       │
-                │ Grouping        │      │ Grouping        │
-                │ Sorting         │      │ Aggregation     │
-                │ Trend Analysis  │      │ Sorting         │
-                └────────┬────────┘      └────────┬────────┘
-                         │                         │
-                         └────────────┬────────────┘
-                                      ▼
-                         ┌──────────────────────────┐
-                         │     Analytical Results   │
-                         └────────────┬─────────────┘
-                                      │
-                                      ▼
-                         ┌──────────────────────────┐
-                         │ Python / Pandas /        │
-                         │ Matplotlib               │
-                         │                          │
-                         │ Data Visualization       │
-                         └────────────┬─────────────┘
-                                      │
-                                      ▼
-                         ┌──────────────────────────┐
-                         │    Business Insights     │
-                         │ & Decision Support       │
-                         └──────────────────────────┘
-```
 
 ------------------------------------------------------------------------
 
