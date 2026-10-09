@@ -78,7 +78,7 @@ Insights**
 
 # 🏗️ System Architecture
 
-![Alt Text](C:\BDA_Ecommerce_Project\screenshots\bda_sys_arch.png)
+![Alt Text](./screenshots/bda_sys_arch.png)
 
 
 
